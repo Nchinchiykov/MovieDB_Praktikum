@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./assets/images/icon.icns" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92c22ce958.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/icon.png">
+    <title>Movieranx - the best place for all your movies</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header class="max-width-1280">
+                <div class="logo">
+                    <a href="./index.html"><img src="./assets/images/Movieranx.png" alt="site logo"></a>
+                </div>
+                <form id="theForm">
+                    <div class="search-bar">
+                        <input type="text" name="keywords" id="keywords" placeholder="Enter you keywords">
+                        <i class="fas fa-search" id="searchBtn"></i>
+                    </div>  
+                </form>
+                <div class="toggleBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav">
+                    <div class="dropdown-container">
+                        <a class="dropdown-menu-btn">Genre</a>
+                        <div class="dropdown-menu">
+                            <div class="genre-section">
+                                <div class="genre genre-btn" data-genre="28">Action</div>
+                                <div class="genre genre-btn" data-genre="12">Adventure</div>
+                                <div class="genre genre-btn" data-genre="16">Animation</div>
+                                <div class="genre genre-btn" data-genre="80">Crime</div>
+                                <div class="genre genre-btn" data-genre="35">Comedy</div>
+                                <div class="genre genre-btn" data-genre="99">Documentary</div>
+                                <div class="genre genre-btn" data-genre="18">Drama</div>
+                                <div class="genre genre-btn" data-genre="10751">Family</div>
+                                <div class="genre genre-btn" data-genre="14">Fantasy</div>
+                            </div>
+                            <div class="genre-section">
+                                <div class="genre genre-btn" data-genre="27">Horror</div>
+                                <div class="genre genre-btn" data-genre="36">History</div>
+                                <div class="genre genre-btn" data-genre="10402">Music</div>
+                                <div class="genre genre-btn" data-genre="9648">Mystery</div>
+                                <div class="genre genre-btn" data-genre="10749">Romance</div>
+                                <div class="genre genre-btn" data-genre="878">Sci-fy</div>
+                                <div class="genre genre-btn" data-genre="10752">War</div>
+                                <div class="genre genre-btn" data-genre="37">Western</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a id="playing_now_link" href="#playing_now">Playing Now</a></div>
+                    <div><a id="upcoming_link" href="#upcoming">Upcoming</a></div>
+                    <div><a id="top_rated_link" href="#top_rated">Top Rated</a></div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+
+
+    <!-- main -->
+    <main class="max-width-1280">
+        <section class="section" id="playing_now">
+            <h2>Playing Now</h2>
+            <div class="grid">
+                <div class="col playing_now"></div>
+            </div>
+        </section>
+
+        <section class="section" id="upcoming">
+            <h2>Upcoming</h2>
+            <div class="grid">
+                <div class="col upcoming"></div>
+            </div>
+        </section>
+
+        <section class="section" id="top_rated">
+            <h2>Top Rated</h2>
+            <div class="grid">
+                <div class="col top_rated"></div>
+            </div>
+        </section>
+
+        <!-- Search Results Display -->
+        <section id="search-results">
+            <h2 class="search-h2">Search Results: </h2>
+            <div class="grid">
+                <div class="col search-results"></div>
+            </div>
+        </section>
+    </main>
+
+    <h3 class="error-message">Sorry no results. Try again.</h3>
+
+    <!-- Modal -->
+    <div class="modal_backdrop">
+        <div class="modal your-element"></div>
+    </div>
+
+    
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="max-width-1280">
+            footer
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/genre.js"></script>
+
+   </body>
+</html>
